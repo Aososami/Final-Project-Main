@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DBY Game Keys - Home</title>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    a{
+      text-decoration: none;
+    }
+    body{
+      background-color: #313639;
+      
+    }
+    ul{
+      list-style: none;
+    }
+    nav{
+      background-color: #192841;
+      float: left;
+      width: 14%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .body{
+      float: right;
+      width: 86%;
+    }
+    nav .logo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15%;
+      gap: 10px;
+    }
+    nav .logo h1{
+      text-align: center;
+      color: white;
+    }
+    nav .logo img{
+      width: 30%;
+    }
+    nav .nav-items{
+      margin-top: 20%;
+    }
+    nav .nav-items ul li img{
+      width: 15%;
+    }
+    nav .nav-items ul li{
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      width: 65%;
+      gap: 12px;
+      font-size: 20px;
+      padding: 12px 40px;
+      margin: 0% 3%;
+      margin-bottom: 20px;
+      color: white;
+      font-weight: 20;
+    }
+    nav .nav-items ul li:hover{
+      cursor: pointer;
+      background-color: #23395d;
+    }
+    .nav2{
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 99;
+    }
+    .nav2 .nav-items{
+      height: 70%;
+      width: 92%;
+      border-radius: 15px;
+      background-color: #192841;
+      display: flex;
+      align-items: center;
+      padding: 0px 30px;
+    }
+    .nav2 .nav-items .search img{
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      margin: 3px 15px;
+    }
+    .nav2 .nav-items .search input{
+      width: 1100px;
+      height: 30px;
+      border-radius: 15px;
+      padding-left: 50px;
+      font-size: 20px;
+    }
+    .nav2 .nav-items .user{
+      display: flex;
+      color: white;
+      margin-left: 7%;
+      font-size: 20px;
+      gap: 10px;
+    }
+    .nav2 .nav-items .user a{
+      color: white;
+    }
+    .nav2 .nav-items .user a:hover{
+      color: #FA8128;
+    }
+    .nav2 .nav-items .user img{
+      width: 30px;
+      height: 30px;
+    }
+    .contact{
+      padding: 0px 100px;
+    }
+    .contact h1{
+      text-align: center;
+      color: white;
+      margin-bottom: 50px;
+    }
+    .contact .content{
+      display: flex;
+      text-align: center;
+      gap: 100px;
+      justify-content: center;
+      color: white;
+    }
+    .contact .content h2{
+      font-size: 35px;
+      margin: 20px 0px;
+    }
+    .contact .content p{
+      font-size: 25px;
+    }
+    .contact .content img{
+      width: 150px;
+    }
+    button{
+      background: #FA8128;
+      border: none;
+      padding: 12px 24px;
+      font-size: 25px;
+      color: white;
+      font-weight: bold;
+      border-radius: 15px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="./IMAGES/game.png" alt="">
+      <h1>DBY<br>Game Keys</h1>
+    </div>
+    <div class="nav-items">
+      <ul>
+        <a href="./index.html"><li><img src="./IMAGES/home.png" alt=""> Home</li></a>
+        <a href="./games.html"><li><img src="./IMAGES/game.png" alt=""> Games</li></a>
+        <a href=""><li><img src="./IMAGES/gift.png" alt=""> Gift Cards</li></a>
+        <a href="./aboutus.html"><li><img src="./IMAGES/about.png" alt=""> About Us</li></a>
+        <a href="./contact.html"><li><img src="./IMAGES/contact.png " alt=""> Contact Us</li></a>
+      </ul>
+    </div>
+  </nav>
+  <div class="body">
+    <div class="nav2">
+      <div class="nav-items">
+        <div class="search">
+          <img src="./IMAGES/search.png" alt="">
+          <input type="text" placeholder="Search">
+        </div>
+        <div class="user">
+          <img src="./IMAGES/user.png" alt="">
+          <a href="">Login</a>
+          <p>|</p>
+          <a href="">Register</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <h1>Contact Us</h1>
+      <div class="content">
+        <div class="box1">
+          <img src="./IMAGES/phone.png" alt="">
+          <h2>BY PHONE</h2>
+          <p>Feel free to give us a call at: <br>+1 905 922 7967</p>
+        </div>
+        <div class="box2">
+          <img src="./IMAGES/report.png" alt="">
+          <h2>REPORT ISSUE</h2>
+          <p>Have an issue to report? <br> Send us your concerns by clicking the link below</p>
+          <button>Click Here</button>
+        </div>
+        <div class="box3">
+          <img src="./IMAGES/chat.png" alt="">
+          <h2>LIVE CHAT</h2>
+          <p>Chat with a member of our team <br> by clicking on the link below</p>
+          <button>Click Here</button>
+        </div>
+      </div>
+    </div>
+    
+  
+</body>
+</html>

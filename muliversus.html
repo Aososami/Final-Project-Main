@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DBY Game Keys - Home</title>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    a{
+      text-decoration: none;
+    }
+    body{
+      background-color: #313639;
+      
+    }
+    ul{
+      list-style: none;
+    }
+    nav{
+      background-color: #192841;
+      float: left;
+      width: 14%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .body{
+      float: right;
+      width: 86%;
+    }
+    nav .logo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15%;
+      gap: 10px;
+    }
+    nav .logo h1{
+      text-align: center;
+      color: white;
+    }
+    nav .logo img{
+      width: 30%;
+    }
+    nav .nav-items{
+      margin-top: 20%;
+    }
+    nav .nav-items ul li img{
+      width: 15%;
+    }
+    nav .nav-items ul li{
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      width: 65%;
+      gap: 12px;
+      font-size: 20px;
+      padding: 12px 40px;
+      margin: 0% 3%;
+      margin-bottom: 20px;
+      color: white;
+      font-weight: 20;
+    }
+    nav .nav-items ul li:hover{
+      cursor: pointer;
+      background-color: #23395d;
+    }
+    .nav2{
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 99;
+    }
+    .nav2 .nav-items{
+      height: 70%;
+      width: 92%;
+      border-radius: 15px;
+      background-color: #192841;
+      display: flex;
+      align-items: center;
+      padding: 0px 30px;
+    }
+    .nav2 .nav-items .search img{
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      margin: 3px 15px;
+    }
+    .nav2 .nav-items .search input{
+      width: 1100px;
+      height: 30px;
+      border-radius: 15px;
+      padding-left: 50px;
+      font-size: 20px;
+    }
+    .nav2 .nav-items .user{
+      display: flex;
+      color: white;
+      margin-left: 7%;
+      font-size: 20px;
+      gap: 10px;
+    }
+    .nav2 .nav-items .user a{
+      color: white;
+    }
+    .nav2 .nav-items .user a:hover{
+      color: #FA8128;
+    }
+    .nav2 .nav-items .user img{
+      width: 30px;
+      height: 30px;
+    }
+    .content{
+      background: #192841;
+      margin: 10px 35px;
+      border-radius: 20px;
+      height: 735px;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      color: white;
+    }
+
+    .content img{
+      width: 500px;
+      height: 500px;
+      border-radius: 15px;
+    }
+    .info h1{
+      font-size: 40px;
+    }
+
+    .info h2 span{
+      color: #FA8128;
+    }
+
+    .info #price{
+      color: #FA8128;
+    }
+
+    .info p{
+      font-size:25px;
+    }
+
+    .info .platforms{
+      display: flex;
+      gap: 10px;
+    }
+
+    .info .platforms p{
+      border: 2px solid white;
+      padding: 6px 15px;
+      margin: 20px 0px;
+    }
+
+    .info .platforms p:hover{
+      background: white;
+      color: #23395d;
+      cursor: pointer;
+    }
+
+    .info #description{
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    button{
+      background: #FA8128;
+      border: none;
+      padding: 20px 40px;
+      font-size: 20px;
+      color: white;
+      border-radius: 15px;
+      font-weight: bold;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    .divider{
+      width: 500px;
+      margin: 15px 0px;
+      height: 2px;
+      border-radius: 15px;
+      background: white;
+    }
+
+    .top{
+      display: flex;
+      flex-direction: row;
+      gap: 100px;
+    }
+
+    .bottom{
+      display: flex;
+      flex-direction: row;
+      margin-top: -70px;
+    }
+
+    .recommend{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .recommend h1{
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .recommend .offers{
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+    }
+
+    .offers .item img{
+      width: 150px;
+      height: 150px;
+    }
+
+    .recommend .offers .viewmore{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 20px;
+      padding: 15px;
+    }
+
+    .recommend .offers .viewmore img{
+      width: 80px;
+      height: 80px;
+    }
+
+    .recommend .viewmore p{
+      color: #FCAE1E;
+      margin-top: -20px;
+    }
+    .item{
+      border-radius: 15px;
+      height: 150px;
+    }
+
+    .item:hover{
+      box-shadow: 2px 2px 20px #FCAE1E;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="./IMAGES/game.png" alt="">
+      <h1>DBY<br>Game Keys</h1>
+    </div>
+    <div class="nav-items">
+      <ul>
+        <a href="./index.html"><li><img src="./IMAGES/home.png" alt=""> Home</li></a>
+        <a href="./games.html"><li><img src="./IMAGES/game.png" alt=""> Games</li></a>
+        <a href=""><li><img src="./IMAGES/gift.png" alt=""> Gift Cards</li></a>
+        <a href="./aboutus.html"><li><img src="./IMAGES/about.png" alt=""> About Us</li></a>
+        <a href="./contact.html"><li><img src="./IMAGES/contact.png " alt=""> Contact Us</li></a>
+      </ul>
+    </div>
+  </nav>
+  <div class="body">
+    <div class="nav2">
+      <div class="nav-items">
+        <div class="search">
+          <img src="./IMAGES/search.png" alt="">
+          <input type="text" placeholder="Search">
+        </div>
+        <div class="user">
+          <img src="./IMAGES/user.png" alt="">
+          <a href="">Login</a>
+          <p>|</p>
+          <a href="">Register</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="top">
+        <div class="image">
+        <img src="./IMAGES/multiversus.jpg" alt="">
+      </div>
+      <div class="info">
+        <h1>MULTIVERSUS</h1>
+        <h2><span>Platforms |</span>  Ps4 Ps5 Pc Xbox</h2>
+        <div class="divider"></div>
+        <h1 id="price"><strong>FREE</strong></h1>
+        <p>Choose platform to purchase on:</p>
+        <div class="platforms">
+          <p>Ps4</p>
+          <p>Ps5</p>
+          <p>Pc</p>
+          <P>Xbox</P>
+        </div>
+        <div class="divider"></div>
+        <p><strong>About this item</strong></p>
+        <p id="description">Best-selling game of 2022 <br>Amazing adventure/action/sports game for all ages</p>
+        <button>PURCHASE NOW</button>
+
+        
+    </div>
+      </div>
+      
+      <div class="bottom">
+        <div class="recommend">
+          <h1>Recommended for you</h1>
+          <div class="offers">
+            <a href="./nba.html">
+              <div class="item">
+                <div class="pic"><img src="./IMAGES/nba.jpg" alt=""></div>
+              </div>
+            </a>
+            <a href="./fortnite.html">
+              <div class="item">
+                <div class="pic"><img src="./IMAGES/fortnite.jpg" alt=""></div>
+              </div>
+            </a>  
+            <a href="./fifa.html">
+              <div class="item">
+                <div class="pic"><img src="./IMAGES/fifa1.jpg" alt=""></div>
+              </div>
+            </a>  
+            <a href="./mw2.html">
+              <div class="item">
+                <div class="pic"><img src="./IMAGES/mw2.jpg" alt=""></div>
+              </div>
+            </a>  
+            <a href="./freddy.html">
+              <div class="item">
+                <div class="pic"><img src="./IMAGES/fnaf.jpg" alt=""></div>
+              </div>
+            </a>  
+            <a href="./untildawn.html">
+               <div class="item">
+                <div class="pic"><img src="./IMAGES/until_dawn.jpg" alt=""></div>
+              </div>
+            </a>  
+            <a href="./warzone.html">
+              <div class="item">
+                <div class="pic"><img src="./IMAGES/warzone.jpg" alt=""></div>
+              </div>
+            </a> 
+            <a href="./games.html">
+                <div class="item">
+                  <div class="viewmore">
+                    <img src="./IMAGES/dot-menu-more-2-svgrepo-com.png" alt="">
+                    <p>View More</p>
+                  </div>
+              </div>
+            </a>
+          </div>
+
+      </div>
+      </div>
+    
+    </div>
+  
+</body>
+</html>
